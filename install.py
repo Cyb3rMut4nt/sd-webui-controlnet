@@ -31,7 +31,7 @@ def extract_base_package(package_string: str) -> str:
 
 
 def install_requirements(req_file):
-    with open(req_file,encoding='utf-8') as file:
+    with open(req_file, 'r', encoding='utf-8') as file:
         for package in file:
             try:
                 package = package.strip()
